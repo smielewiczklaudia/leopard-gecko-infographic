@@ -8,30 +8,43 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
             background-color: #F7F3EC;
             color: #2D2926;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 40px;
         }
 
         h1 {
-            color: #2D2926;
+            margin-bottom: 10px;
         }
 
         p {
             color: #77716B;
+            margin-bottom: 30px;
         }
 
-        img {
-            max-width: 700px;
+        .dashboard {
+            max-width: 900px;
             width: 100%;
+            margin: auto;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
         }
 
-        a {
-            color: #B8753D;
+        .github {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 20px;
+            background-color: #B8753D;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .github:hover {
+            background-color: #965D30;
         }
     </style>
 </head>
@@ -45,12 +58,21 @@
         care requirements and biological characteristics.
     </p>
 
-    <img src="leopard_gecko_infographic.png"
-         alt="Leopard Gecko Care Dashboard">
+    <img
+        class="dashboard"
+        src="leopard_gecko_infographic.png"
+        alt="Leopard Gecko Care Dashboard"
+    >
 
-    <p>
-        Created using Python, Pandas and Matplotlib.
-    </p>
+    <br>
+
+    <a
+        class="github"
+        href="https://github.com/smielewiczklaudia/leopard-gecko-infographic"
+        target="_blank"
+    >
+        View the Python Source Code
+    </a>
 
 </body>
 </html>
